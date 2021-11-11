@@ -30,6 +30,7 @@ stylesheets = [dbc.themes.MATERIA]
 app = dash.Dash(__name__, external_stylesheets=stylesheets,
                 meta_tags=[dict(name="viewport", content="width=device-width, initial-scale=1.0")])
 
+server = app.server
 app.layout = dbc.Container([
 
     dbc.Card([
